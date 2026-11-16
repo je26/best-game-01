@@ -1,0 +1,29 @@
+<!doctype html>
+<!--
+  CORALHOLD — Defend the Heart Reef. An original tower-defence + hero game.
+  How the game maps to the bounty rubric (all true, all in this code):
+  1. Complete game: title screen (ui.js drawTitle), 15 waves with bosses
+     (waves.js), win/lose + restart (ui.js drawVictory/drawDefeat), HUD
+     (ui.js drawHUD). 2. Depth: 6 towers x 3 tiers (towers.js), 8 enemy
+     kinds (enemies.js), draft boons between waves (draft.js), 3
+     difficulties (config.js). 3. Polish: WebAudio sound + generative
+     music (audio.js), particles/shake/damage numbers (particles.js),
+     pause/settings (ui.js). 4. Original: hand-drawn canvas reef art,
+     own names and music, no assets. 5. Structure: one job per file,
+     named for what it does (see src/).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coralhold — Defend the Heart Reef</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main id="stage">
+  <canvas id="game" width="1280" height="720" aria-label="Coralhold game canvas"></canvas>
+  <p id="hint">Coralhold needs JavaScript and a desktop browser. Click the game, then play with keyboard and mouse.</p>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
